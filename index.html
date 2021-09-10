@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>JH부동산리서치</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -8,7 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 3300px}
+    .row.content {height: 1200px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -40,21 +40,25 @@
     <div class="col-sm-3 sidenav">
     </div>
     <div class="col-sm-9">
-      <div class='tableauPlaceholder' id='viz1631255143876' style='position: relative'>
+      <div class="container-fluid">
+      </div>
+     <div class="container-fluid">
+      <h2><strong>전국 평균 실거래가 비교</strong></h2>
+      <div class='tableauPlaceholder' id='viz1631260428965' style='position: relative'>
         <noscript>
           <a href='#'>
-            <img alt='7월 아파트 평균실거래가 비교표 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_16301620205370&#47;01_&#47;1_rss.png' style='border: none' />
+            <img alt='01. 메인용 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_16301620205370&#47;01__1&#47;1_rss.png' style='border: none' />
           </a>
         </noscript>
-        
+
         <object class='tableauViz'  style='display:none;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
           <param name='embed_code_version' value='3' />
           <param name='site_root' value='' />
-          <param name='name' value='7_16301620205370&#47;01_' />
+          <param name='name' value='7_16301620205370&#47;01__1' />
           <param name='tabs' value='no' />
           <param name='toolbar' value='no' />
-          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_16301620205370&#47;01_&#47;1.png' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_16301620205370&#47;01__1&#47;1.png' />
           <param name='animate_transition' value='yes' />
           <param name='display_static_image' value='yes' />
           <param name='display_spinner' value='yes' />
@@ -62,16 +66,20 @@
           <param name='display_count' value='yes' />
           <param name='language' value='ko-KR' />
           <param name='filter' value='publish=yes' />
+          <param name='showShareOptions' value='false' />
         </object>
       </div>
       <script type='text/javascript'>
-        var divElement = document.getElementById('viz1631255143876');
+        var divElement = document.getElementById('viz1631260428965');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        vizElement.style.width='1400px';vizElement.style.height='3300px';
+         if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1400px';vizElement.style.height='527px';}
+         else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1400px';vizElement.style.height='527px';}
+         else { vizElement.style.width='100%';vizElement.style.height='727px';}
         var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
       </script>
+      </div>
     </div>
   </div>
 </div>

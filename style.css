@@ -1,93 +1,88 @@
 :root {
-  --text-color: rgb(236, 223, 223);
+  --border-color: rgb(197, 192, 192);
 }
 
 body {
-  margin: 0;
-  font-family: "Source Sans Pro";
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: brown;
-  padding: 8px 12px;
+  flex-direction: row;
+  width: 1024px;
+}
+
+.nav {
+  width: 200px;
+  position: sticky;
+  margin-right: 50px;
 }
 
 .navbar_logo {
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
   font-size: 24px;
-  color: white;
-}
-
-.navbar_logo i {
-  color: burlywood;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar_menu {
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+.navbar_menu ul {
+  padding-left: 0px;
   display: flex;
-  list-style: none;
-  padding-left: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navbar_menu li {
-  padding: 8px 12px;
-}
-
-.navbar_menu li:hover {
-  background-color: blue;
-  border-radius: 4px;
-}
-
-.navbar_icons {
   list-style: none;
-  color: white;
-  display: flex;
-  padding-left: 0%;
+  font-size: 24px;
+  padding: 12px 0px;
 }
 
-.navbar_icons li {
+.chart {
+  width: 100%;
+}
+
+.up_chart {
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.chart_menu {
+  border-radius: 10px 10px 0px 0px;
+  border: 2px solid var(--border-color);
+  width: 100%;
+}
+
+.chart_menu ul {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
   padding: 8px 12px;
 }
 
-.navbar_toogleBtn {
-  display: none;
-  position: absolute;
-  right: 32px;
-  font-size: 24px;
-  color: green;
+.chart_menu li {
+  list-style: none;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.chart_body {
+  border-radius: 0px 0px 10px 10px;
+  border: 2px solid var(--border-color);
+  width: 100%;
+  height: 500px;
+  margin-top: -2px;
+}
 
-  .navbar_menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .navbar_icons {
-    display: none;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar_toogleBtn {
-    display: block;
-  }
-
-  .navbar_menu.active,
-  .navbar_icons.active {
-    display: flex;
-  }
+.down_chart {
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
 }

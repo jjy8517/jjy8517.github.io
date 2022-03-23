@@ -5,44 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <title>Nav bar</title>
-    <script
-      src="https://kit.fontawesome.com/0c0ff12e50.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js" defer></script>
+    <title>Document</title>
   </head>
   <body>
-    <nav calss="navbar">
+    <div class="nav">
       <div class="navbar_logo">
-        <i class="fa-solid fa-building-user"></i>
-        <a href="">DreamCoding</a>
+        <a href="#">아파트한눈에</a>
       </div>
-      <ul class="navbar_menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Wedding</a></li>
-        <li><a href="">QnA</a></li>
-        <li><a href="">Booking</a></li>
-      </ul>
-      <ul class="navbar_icons">
-        <li>
-          <i class="fa-brands fa-twitter"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-facebook-f"></i>
-        </li>
-      </ul>
-
-      <a href="#" class="navbar_toogleBtn">
-        <i class="fa-solid fa-align-justify"></i>
-      </a>
-    </nav>
+      <div class="navbar_menu">
+        <ul>
+          <li><a href="">아파트배치표</a></li>
+          <li><a href="">수요와공급</a></li>
+          <li><a href="">인구</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="up_chart">
+        <div class="chart_menu">
+          <ul>
+            <li><a href="#">매매 실거래가</a></li>
+            <li><a href="#">전세 실거래가</a></li>
+            <li><a href="#">갭 실거래가</a></li>
+            <li><a href="#">매매지수</a></li>
+            <li><a href="#">전세지수</a></li>
+            <li><a href="#">갭지수</a></li>
+          </ul>
+        </div>
+        <div class="chart_body">
+          <p>up</p>
+        </div>
+        <div class="down_chart">
+          <p>down</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

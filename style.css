@@ -86,3 +86,103 @@ main {
   height: 500px;
   margin-top: 40px;
 }
+
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  line-height: 1;
+  padding-bottom: 40px;
+}
+footer.noline {
+  margin-top: 0;
+  border: none;
+}
+
+.footer_content {
+  position: relative;
+  width: 1080px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.footer_content .copyright {
+  margin-top: 17px;
+  color: #888888;
+  text-align: left;
+  font-size: 12px;
+}
+
+.footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer_menu a {
+  display: inline-block;
+  position: relative;
+  padding-left: 9px;
+  margin-left: 8px;
+  color: #222222;
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer_menu a:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  top: 50%;
+  margin-top: -5px;
+  left: 0px;
+  background: #bfbfbf;
+}
+.footer_menu a:first-child {
+  padding: 0;
+  margin-left: 0;
+}
+.footer_menu a:first-child:before {
+  content: normal;
+}
+
+.fc_etc {
+  margin-top: 24px;
+}
+.fc_etc .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.fc_etc .txt:first-child {
+  margin-top: 0;
+}
+.fc_etc .txt span {
+  display: block;
+  color: #888888;
+  font-size: 13px;
+  font-weight: 400;
+}
+.fc_etc .txt span:before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 7px;
+  margin: 0 5px 0 6px;
+  background: url("/images/f_dash.png") no-repeat left top;
+  vertical-align: 1px;
+}
+.fc_etc .txt span:first-child:before {
+  content: normal;
+}
+
+footer .sh_go {
+  position: absolute;
+  top: 27px;
+  right: 0px;
+}
+

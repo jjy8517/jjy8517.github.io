@@ -58,6 +58,20 @@
         </div>
       </div>
     </main>
+	  
+    <!-- 여기 아래에 JavaScript 코드 삽입 -->
+    <script>
+      document.getElementById("date-select").addEventListener("change", function () {
+        const selectedDate = this.value;
+        updateAveragePrice(selectedDate);
+      });
+
+      function updateAveragePrice(date) {
+        document.querySelector(".average-price p").textContent = `${date} 기준 시도별 평균 거래가격`;
+      }
+    </script>
+
+	  
     <footer>
 		  <div class="footer_content">
 		      <div class="fc_etc">
